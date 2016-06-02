@@ -15,7 +15,7 @@ namespace Godun
         }
 
         public int Id { get; set; }
-
+        public string N { get; set; }
         [Required]
         [StringLength(30)]
         public string Name { get; set; }
