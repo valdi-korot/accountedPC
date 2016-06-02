@@ -8,7 +8,7 @@ namespace Godun
     public partial class Model : DbContext
     {
         public Model()
-            : base("name=ModelAccountedPC")
+            : base("name=Model1")
         {
         }
 

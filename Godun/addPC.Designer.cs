@@ -39,6 +39,7 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.ОК = new System.Windows.Forms.Button();
             this.Отмена = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -107,7 +108,7 @@
             // ОК
             // 
             this.ОК.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ОК.Location = new System.Drawing.Point(42, 277);
+            this.ОК.Location = new System.Drawing.Point(41, 308);
             this.ОК.Name = "ОК";
             this.ОК.Size = new System.Drawing.Size(75, 23);
             this.ОК.TabIndex = 9;
@@ -117,18 +118,26 @@
             // Отмена
             // 
             this.Отмена.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Отмена.Location = new System.Drawing.Point(133, 277);
+            this.Отмена.Location = new System.Drawing.Point(132, 308);
             this.Отмена.Name = "Отмена";
             this.Отмена.Size = new System.Drawing.Size(75, 23);
             this.Отмена.TabIndex = 10;
             this.Отмена.Text = "Отмена";
             this.Отмена.UseVisualStyleBackColor = true;
             // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(76, 256);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 11;
+            // 
             // addPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 384);
+            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.Отмена);
             this.Controls.Add(this.ОК);
             this.Controls.Add(this.textBox9);
@@ -160,5 +169,6 @@
         public System.Windows.Forms.TextBox textBox7;
         public System.Windows.Forms.TextBox textBox8;
         public System.Windows.Forms.TextBox textBox9;
+        public System.Windows.Forms.TextBox textBox10;
     }
 }

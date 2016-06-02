@@ -128,9 +128,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AccountentPC.mdf" />
+    <Content Include="AccountentPC.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="AccountentPC_log.ldf">
       <DependentUpon>AccountentPC.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

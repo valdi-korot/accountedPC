@@ -45,7 +45,8 @@ namespace Godun
                     OS = form.textBox7.Text,
                     IP = form.textBox8.Text,
                     MothersPlate = form.textBox9.Text,
-                    Org_Id = Org_Id
+                    Org_Id = Org_Id,
+                    IventNumber = Convert.ToInt16(form.textBox10.Text)
                 };
                 db.PCs.Add(row);
                 db.SaveChanges();
@@ -68,6 +69,7 @@ namespace Godun
             form.textBox7.Text = row.OS;
             form.textBox8.Text = row.IP;
             form.textBox9.Text = row.MothersPlate;
+            form.textBox10.Text = row.IventNumber.ToString();
             if (form.ShowDialog() == DialogResult.OK)
             {
 
@@ -81,6 +83,7 @@ namespace Godun
                 row.IP = form.textBox8.Text;
                 row.MothersPlate = form.textBox9.Text;
                 row.Org_Id = Org_Id;
+                row.IventNumber = Convert.ToInt16(form.textBox10.Text);
                 db.Entry(row).State=EntityState.Modified;
                 db.SaveChanges();
                 db.Organisations.Load();
@@ -107,7 +110,7 @@ namespace Godun
             int id;
             if(int.TryParse(textBox1.Text,out id))
             {
-                var list = db.PCs.Where(p => p.Id == id);
+                var list = db.PCs.Where(p => p.IventNumber == id);
                 dataGridView1.DataSource = list.ToList();
             }
         else

@@ -38,7 +38,9 @@ namespace Godun
         public string MothersPlate { get; set; }
 
         public int Org_Id { get; set; }
-        public int IventNumber { get; set; }
+
+        public int? IventNumber { get; set; }
+
         public virtual Organisations Organisations { get; set; }
     }
 }
